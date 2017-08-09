@@ -3,6 +3,7 @@
     <head>
      <meta charset="UTF-8">
 	<title>week-4-game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
   
@@ -24,7 +25,7 @@
     <h2>Directions:</h2>
     </center>
 
-    <h2>- You will be given a random number ath the start of the game.
+    <h2>- You will be given a random number at the start of the game.
     </h2>
     
     <h2>
@@ -32,54 +33,62 @@
     </h2>
     
     <h2>
-    - You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.
+    - You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
     </h2>
   
     <h2>
-    - The value of each crystal is hidden from you until you click on it.
+    - The value of each crystal is hidden from you until you click on it, <br>and changes for every game.
     </h2>
    
     <h2>
-    - Each time when the game starts, the game will change the vlues of each crystal.
+    - Each time when the game starts, the game will change the values of each crystal.
     </h2>
     </div>
+
+    <div class="video">
    
-    <div class="score">
+    <br>
+    <video controls="" height="500" width="500">
+    <source src="C:/case homework/week-4-game/assets/crystalsCollector_demo.mp4"/>
+    </video>
+    </div>
+   
+    <div class="goal">
+    <h1><span id="goal">0</span></h1>
     </div>
 
     <div class="tally">
-    <h2>
-    WINS:
-    </h2>
-    <br><br>
-    <h2>
-    LOSSES:
-    </h2>
-    </div>
+    <h2>WINS: <span id="wins">0</span></h2>
+    <br>
+    <h2>LOSSES: <span id="losses">0</span></h2>
 
 
     <div class="buttons">
+    <button id="redbutton">
     <image src="C:/case homework/week-4-game/assets/images/red.png"
-    height= 110, width= 115>
-    <image src="C:/case homework/week-4-game/assets/images/blue.png"
-    height= 110, width= 115>
-    <image src="C:/case homework/week-4-game/assets/images/yellow.png"
-    height= 110, width= 115>
-    <image src="C:/case homework/week-4-game/assets/images/green.png"
-    height= 110, width= 115>
-        
-    </div>
-    
-  
+    height= 106, width= 100></button>
 
-   
+    <button id="bluebutton">
+    <image src="C:/case homework/week-4-game/assets/images/blue.png"
+    height= 106, width= 100></button>
+
+    <button id="yellowbutton">
+    <image src="C:/case homework/week-4-game/assets/images/yellow.png"
+    height= 106, width= 100></button>
+
+    <button id="greenbutton">
+    <image src="C:/case homework/week-4-game/assets/images/green.png"
+    height= 106, width= 100></button>
+    </div>
+            
 
     <div class="totalscore">
     <h2>
     Your total score is:
     </h2>
 
-    <div class="footer">
+    <div class="display">
+    <h1><span id="score">0</span></h1>
     </div>
 
 
