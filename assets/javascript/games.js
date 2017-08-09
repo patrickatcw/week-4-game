@@ -33,14 +33,19 @@
         goalGoal.text(goal);
         };
 
+
+        //function (reset)?? to get game back to start once user wins, or loses,
+
+            //or
+
    /* function updateDom(didUserWin) {                                      //code to apply for updating
     $("#tally").empty();
     if (didUserWin === true) {
-        $("#tally").append($("wins").text(" You won!!!"));
+        $("#tally").append($("<h2>").text(" You won!!!"));
         setGame();
         renderMatchingNumber();
     } else if (didUserWin === false) {
-        $("#tally").append($("losses").text(" You Lost!!!"));
+        $("#tally").append($("<h2>").text(" You Lost!!!"));
         setGame();
         renderMatchingNumber();
     };*/
